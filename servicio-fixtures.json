@@ -1,0 +1,1148 @@
+{
+  "metadata": {
+    "version": "0.1.0",
+    "fecha": "2026-08-30",
+    "fuentes": [
+      "normativa/Normativa - indice y vigencias.docx",
+      "tramites-procesos/Tramites piloto - indice.docx",
+      "tramites-procesos/Catalogo de tramites (Portal).xlsx",
+      "tramites-procesos/Tramites piloto - pasos y normativa.xlsx"
+    ],
+    "convenciones": {
+      "puntaje": "Los puntajes del mock son manuales y solo comparables dentro de cada respuesta.",
+      "vigencia_estado": [
+        "vigente",
+        "no_vigente",
+        "prorrogada"
+      ],
+      "nivel_identificacion": [
+        "sin_clave",
+        "clave_simple",
+        "presencial_o_validacion_manual"
+      ]
+    }
+  },
+  "consultar_normativa": [
+    {
+      "id": "N01",
+      "request": {
+        "texto": "baja de automotor por venta",
+        "filtros": {
+          "vigente_a": "2026-08-30",
+          "tributo": "automotor"
+        },
+        "k": 3
+      },
+      "response": [
+        {
+          "texto": "La denuncia impositiva de venta ante la DGR es causal de baja si no registra deudas del gravamen a la fecha, si existe denuncia de venta ante el Registro Nacional, si se identifica fehacientemente al adquirente y si se acompana la documentacion que determine la Autoridad de Aplicacion.",
+          "cita": "Ord. 3500, Anexo Impuesto Automotor, art. 12 inc. c",
+          "cadena_jerarquica": [
+            "Ordenanza 3500",
+            "Anexo Impuesto Automotor",
+            "Articulo 12",
+            "Inciso c"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": null,
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.92,
+          "fuente": {
+            "norma_id": "ORD-3500",
+            "titulo": "Ordenanza Fiscal (Anexos I a XV)",
+            "archivo": "ORD-3500 - Ordenanza Fiscal (vigente).pdf"
+          }
+        },
+        {
+          "texto": "La baja de automotor se encadena con la verificacion de libre deuda porque el articulo 12 inciso c exige no registrar deudas del gravamen a la fecha de la denuncia.",
+          "cita": "Ord. 3500, Anexo Impuesto Automotor, art. 12 inc. c",
+          "cadena_jerarquica": [
+            "Ordenanza 3500",
+            "Anexo Impuesto Automotor",
+            "Articulo 12",
+            "Inciso c"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": null,
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.81,
+          "fuente": {
+            "norma_id": "ORD-3500",
+            "titulo": "Ordenanza Fiscal (Anexos I a XV)",
+            "archivo": "ORD-3500 - Ordenanza Fiscal (vigente).pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N02",
+      "request": {
+        "texto": "denuncia de venta automotor",
+        "filtros": {
+          "vigente_a": "2026-08-30",
+          "tributo": "automotor"
+        },
+        "k": 3
+      },
+      "response": [
+        {
+          "texto": "La denuncia impositiva de venta ante la DGR limita la responsabilidad del transmitente cuando cumple los requisitos del articulo 12 inciso c.",
+          "cita": "Ord. 3500, Anexo Impuesto Automotor, art. 12 inc. c",
+          "cadena_jerarquica": [
+            "Ordenanza 3500",
+            "Anexo Impuesto Automotor",
+            "Articulo 12",
+            "Inciso c"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": null,
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.9,
+          "fuente": {
+            "norma_id": "ORD-3500",
+            "titulo": "Ordenanza Fiscal (Anexos I a XV)",
+            "archivo": "ORD-3500 - Ordenanza Fiscal (vigente).pdf"
+          }
+        },
+        {
+          "texto": "La falsedad en la declaracion jurada del articulo 12 inciso c inhibe la limitacion de responsabilidad. Si un error imputable al denunciante impide notificar al nuevo responsable, los efectos de la denuncia se suspenden hasta que sea salvado.",
+          "cita": "Ord. 3500, Anexo Impuesto Automotor, art. 13",
+          "cadena_jerarquica": [
+            "Ordenanza 3500",
+            "Anexo Impuesto Automotor",
+            "Articulo 13"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": null,
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.86,
+          "fuente": {
+            "norma_id": "ORD-3500",
+            "titulo": "Ordenanza Fiscal (Anexos I a XV)",
+            "archivo": "ORD-3500 - Ordenanza Fiscal (vigente).pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N03",
+      "request": {
+        "texto": "libre deuda para tramites municipales",
+        "filtros": {
+          "vigente_a": "2026-08-30"
+        },
+        "k": 3
+      },
+      "response": [
+        {
+          "texto": "Ninguna oficina publica municipal ni organismo autarquico puede dar curso a tramites sobre transferencia de bienes, negocios, activos y pasivos sin acreditar la inexistencia de deudas fiscales mediante certificacion de la Autoridad de Aplicacion.",
+          "cita": "Ord. 3500, Parte General, art. 37",
+          "cadena_jerarquica": [
+            "Ordenanza 3500",
+            "Parte General",
+            "Articulo 37"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": null,
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.91,
+          "fuente": {
+            "norma_id": "ORD-3500",
+            "titulo": "Ordenanza Fiscal (Anexos I a XV)",
+            "archivo": "ORD-3500 - Ordenanza Fiscal (vigente).pdf"
+          }
+        },
+        {
+          "texto": "Las instituciones bancarias no pueden conceder ni renovar creditos sin constancia de situacion fiscal regular expedida por la Direccion.",
+          "cita": "Ord. 3500, Parte General, art. 35",
+          "cadena_jerarquica": [
+            "Ordenanza 3500",
+            "Parte General",
+            "Articulo 35"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": null,
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.84,
+          "fuente": {
+            "norma_id": "ORD-3500",
+            "titulo": "Ordenanza Fiscal (Anexos I a XV)",
+            "archivo": "ORD-3500 - Ordenanza Fiscal (vigente).pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N04",
+      "request": {
+        "texto": "valuacion o base imponible automotor",
+        "filtros": {
+          "tributo": "automotor"
+        },
+        "k": 2
+      },
+      "response": [
+        {
+          "texto": "En el impuesto automotor, los articulos 1 a 3 regulan el hecho imponible, la radicacion y la base de calculo segun la valuacion del DNRPA.",
+          "cita": "Ord. 3500, Anexo Impuesto Automotor, arts. 1 a 3",
+          "cadena_jerarquica": [
+            "Ordenanza 3500",
+            "Anexo Impuesto Automotor",
+            "Articulos 1 a 3"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": null,
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.94,
+          "fuente": {
+            "norma_id": "ORD-3500",
+            "titulo": "Ordenanza Fiscal (Anexos I a XV)",
+            "archivo": "ORD-3500 - Ordenanza Fiscal (vigente).pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N05",
+      "request": {
+        "texto": "alicuota o tasa automotor",
+        "filtros": {
+          "vigente_a": "2026-08-30",
+          "tributo": "automotor"
+        },
+        "k": 3
+      },
+      "response": [
+        {
+          "texto": "La Ordenanza Fiscal define el hecho imponible, la radicacion y la base de calculo del impuesto automotor; la Ordenanza Tarifaria vigente es la que completa el monto aplicable para el periodo correspondiente.",
+          "cita": "Ord. 3500, Anexo Impuesto Automotor, arts. 1 a 3",
+          "cadena_jerarquica": [
+            "Ordenanza 3500",
+            "Anexo Impuesto Automotor",
+            "Articulos 1 a 3"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": null,
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.79,
+          "fuente": {
+            "norma_id": "ORD-3500",
+            "titulo": "Ordenanza Fiscal (Anexos I a XV)",
+            "archivo": "ORD-3500 - Ordenanza Fiscal (vigente).pdf"
+          }
+        },
+        {
+          "texto": "La Ordenanza Tarifaria 2016 es la norma tarifaria vigente del corpus base y debe consultarse junto con sus modificatorias para determinar el componente economico aplicable.",
+          "cita": "Ord. 5069, art. 1 y Anexo I",
+          "cadena_jerarquica": [
+            "Ordenanza 5069",
+            "Articulo 1",
+            "Anexo I"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": "2016-06-02",
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.75,
+          "fuente": {
+            "norma_id": "ORD-5069",
+            "titulo": "Ordenanza Tarifaria 2016 (Anexos I a XVIII)",
+            "archivo": "ORD-5069 - Ordenanza Tarifaria 2016.pdf"
+          }
+        }
+      ],
+      "notas": [
+        "El detalle tarifario fino de 5069 y sus modificatorias sigue pendiente de relevamiento exhaustivo."
+      ]
+    },
+    {
+      "id": "N06",
+      "request": {
+        "texto": "ordenanza tarifaria 2009 automotor",
+        "filtros": {
+          "vigente_a": "2010-06-01",
+          "tributo": "automotor"
+        },
+        "k": 2
+      },
+      "response": [
+        {
+          "texto": "Para una consulta fechada en 2010, la referencia tarifaria del corpus base es la Ordenanza Tarifaria 2009, todavia no abrogada a esa fecha.",
+          "cita": "Ord. 3501, art. 1 y Anexo Tarifario",
+          "cadena_jerarquica": [
+            "Ordenanza 3501",
+            "Articulo 1",
+            "Anexo Tarifario"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": "2009-03-31",
+            "hasta": "2016-06-02",
+            "derogada_por": "Ord. 5069, art. 2"
+          },
+          "puntaje": 0.89,
+          "fuente": {
+            "norma_id": "ORD-3501",
+            "titulo": "Ordenanza Tarifaria 2009",
+            "archivo": "ORD-3501 - Ordenanza Tarifaria 2009 (ABROGADA por 5069).pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N07",
+      "request": {
+        "texto": "ordenanza tarifaria 2009 automotor",
+        "filtros": {
+          "vigente_a": "2026-08-30",
+          "tributo": "automotor"
+        },
+        "k": 3
+      },
+      "response": [
+        {
+          "texto": "La Ordenanza Tarifaria 2009 fue abrogada por la Ordenanza 5069. El propio indice de vigencias cita el articulo 2 de la 5069 como acto derogatorio expreso.",
+          "cita": "Ord. 5069, art. 2",
+          "cadena_jerarquica": [
+            "Ordenanza 5069",
+            "Articulo 2"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": "2016-06-02",
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.93,
+          "fuente": {
+            "norma_id": "ORD-5069",
+            "titulo": "Ordenanza Tarifaria 2016 (Anexos I a XVIII)",
+            "archivo": "ORD-5069 - Ordenanza Tarifaria 2016.pdf"
+          }
+        },
+        {
+          "texto": "La Ordenanza Tarifaria 2009 aparece como antecedente historico, pero hoy su estado es no vigente por abrogacion expresa.",
+          "cita": "Ord. 3501, art. 1 y Anexo Tarifario",
+          "cadena_jerarquica": [
+            "Ordenanza 3501",
+            "Articulo 1",
+            "Anexo Tarifario"
+          ],
+          "vigencia": {
+            "estado": "no_vigente",
+            "desde": "2009-03-31",
+            "hasta": "2016-06-02",
+            "derogada_por": "Ord. 5069, art. 2"
+          },
+          "puntaje": 0.66,
+          "fuente": {
+            "norma_id": "ORD-3501",
+            "titulo": "Ordenanza Tarifaria 2009",
+            "archivo": "ORD-3501 - Ordenanza Tarifaria 2009 (ABROGADA por 5069).pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N08",
+      "request": {
+        "texto": "prorroga vencimientos periodo fiscal 2026",
+        "filtros": {
+          "vigente_a": "2026-08-30"
+        },
+        "k": 3
+      },
+      "response": [
+        {
+          "texto": "La Ordenanza 6599 prorroga para el periodo fiscal 2026 los articulos 2 y 3 de la Parte General de la Ordenanza 3500 hasta el 30 de abril de 2026.",
+          "cita": "Ord. 6599, art. 1",
+          "cadena_jerarquica": [
+            "Ordenanza 6599",
+            "Articulo 1"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": "2026-02-24",
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.95,
+          "fuente": {
+            "norma_id": "ORD-6599",
+            "titulo": "Prorroga de vencimientos, periodo fiscal 2026",
+            "archivo": "ORD-6599 - Prorroga vencimientos periodo fiscal 2026.pdf"
+          }
+        },
+        {
+          "texto": "La Ordenanza 6599 tambien prorroga para el periodo fiscal 2026 los articulos 5 y 8 de la Parte General del Anexo I de la Ordenanza 5069.",
+          "cita": "Ord. 6599, art. 2",
+          "cadena_jerarquica": [
+            "Ordenanza 6599",
+            "Articulo 2"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": "2026-02-24",
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.91,
+          "fuente": {
+            "norma_id": "ORD-6599",
+            "titulo": "Prorroga de vencimientos, periodo fiscal 2026",
+            "archivo": "ORD-6599 - Prorroga vencimientos periodo fiscal 2026.pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N09",
+      "request": {
+        "texto": "vencimientos automotor 2026",
+        "filtros": {
+          "vigente_a": "2026-08-30",
+          "tributo": "automotor"
+        },
+        "k": 3
+      },
+      "response": [
+        {
+          "texto": "Para el periodo fiscal 2026, la referencia temporal del corpus indica que los articulos 5 y 8 de la Parte General del Anexo I de la Ordenanza 5069 fueron prorrogados por la Ordenanza 6599.",
+          "cita": "Ord. 6599, art. 2",
+          "cadena_jerarquica": [
+            "Ordenanza 6599",
+            "Articulo 2"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": "2026-02-24",
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.88,
+          "fuente": {
+            "norma_id": "ORD-6599",
+            "titulo": "Prorroga de vencimientos, periodo fiscal 2026",
+            "archivo": "ORD-6599 - Prorroga vencimientos periodo fiscal 2026.pdf"
+          }
+        },
+        {
+          "texto": "La Ordenanza Tarifaria 2016 permanece vigente, pero para esta consulta debe interpretarse con la prorroga puntual introducida por la Ordenanza 6599 para el periodo fiscal 2026.",
+          "cita": "Ord. 5069, arts. 5 y 8 del Anexo I, con prorroga por Ord. 6599, art. 2",
+          "cadena_jerarquica": [
+            "Ordenanza 5069",
+            "Anexo I",
+            "Articulos 5 y 8"
+          ],
+          "vigencia": {
+            "estado": "prorrogada",
+            "desde": "2016-06-02",
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.8,
+          "fuente": {
+            "norma_id": "ORD-5069",
+            "titulo": "Ordenanza Tarifaria 2016 (Anexos I a XVIII)",
+            "archivo": "ORD-5069 - Ordenanza Tarifaria 2016.pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "N10",
+      "request": {
+        "texto": "exencion inexistente de ejemplo",
+        "filtros": {
+          "vigente_a": "2026-08-30"
+        },
+        "k": 3
+      },
+      "response": [],
+      "notas": [
+        "Caso vacio para que el mock cubra ausencia de candidatos normativos."
+      ]
+    }
+  ],
+  "candidatos_de_tramite": [
+    {
+      "id": "T01",
+      "request": {
+        "texto": "necesito un libre deuda",
+        "k": 5
+      },
+      "response": [
+        {
+          "cod": 131,
+          "nombre": "Certificado de Libre deuda para tramites municipales",
+          "puntaje": 0.71,
+          "habilitado": true,
+          "requisitos": [
+            "Datos del solicitante",
+            "Referencia al tramite municipal o finalidad",
+            "Situacion fiscal regular"
+          ],
+          "nivel_identificacion": "clave_simple",
+          "costo": "Sin costo",
+          "tiempo": "Emision inmediata si la situacion fiscal es regular",
+          "validez": "7 dias corridos",
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 127,
+          "nombre": "Certificado de libre deuda para bienes automotor",
+          "puntaje": 0.68,
+          "habilitado": true,
+          "requisitos": [
+            "Patente o dominio",
+            "Datos del titular",
+            "Situacion fiscal regular en todos los tributos municipales"
+          ],
+          "nivel_identificacion": "clave_simple",
+          "costo": "$1.589,37",
+          "tiempo": "Aproximadamente 3 dias",
+          "validez": "Hasta el proximo vencimiento del impuesto automotor",
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 125,
+          "nombre": "Solicitud de Certificado de Situacion Fiscal Regular, para Transferencia de Inmueble",
+          "puntaje": 0.63,
+          "habilitado": true,
+          "requisitos": [
+            "Datos del inmueble",
+            "Datos del titular",
+            "Finalidad de la certificacion"
+          ],
+          "nivel_identificacion": "clave_simple",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "request": {
+        "texto": "libre deuda automotor",
+        "k": 5
+      },
+      "response": [
+        {
+          "cod": 127,
+          "nombre": "Certificado de libre deuda para bienes automotor",
+          "puntaje": 0.9,
+          "habilitado": true,
+          "requisitos": [
+            "Patente o dominio",
+            "Datos del titular",
+            "Situacion fiscal regular en todos los tributos municipales"
+          ],
+          "nivel_identificacion": "clave_simple",
+          "costo": "$1.589,37",
+          "tiempo": "Aproximadamente 3 dias",
+          "validez": "Hasta el proximo vencimiento del impuesto automotor",
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 131,
+          "nombre": "Certificado de Libre deuda para tramites municipales",
+          "puntaje": 0.6,
+          "habilitado": true,
+          "requisitos": [
+            "Datos del solicitante",
+            "Referencia al tramite municipal o finalidad",
+            "Situacion fiscal regular"
+          ],
+          "nivel_identificacion": "clave_simple",
+          "costo": "Sin costo",
+          "tiempo": "Emision inmediata si la situacion fiscal es regular",
+          "validez": "7 dias corridos",
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        }
+      ]
+    },
+    {
+      "id": "T03",
+      "request": {
+        "texto": "libre deuda para presentar en expediente municipal",
+        "k": 5
+      },
+      "response": [
+        {
+          "cod": 131,
+          "nombre": "Certificado de Libre deuda para tramites municipales",
+          "puntaje": 0.88,
+          "habilitado": true,
+          "requisitos": [
+            "Datos del solicitante",
+            "Referencia al expediente o tramite municipal",
+            "Situacion fiscal regular"
+          ],
+          "nivel_identificacion": "clave_simple",
+          "costo": "Sin costo",
+          "tiempo": "Emision inmediata si la situacion fiscal es regular",
+          "validez": "7 dias corridos",
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 141,
+          "nombre": "Certificado de Libre deuda de Juzgado Administrativo Municipal de Faltas",
+          "puntaje": 0.69,
+          "habilitado": true,
+          "requisitos": [
+            "Datos del solicitante",
+            "Identificacion del tramite o expediente de faltas"
+          ],
+          "nivel_identificacion": "clave_simple",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        }
+      ]
+    },
+    {
+      "id": "T04",
+      "request": {
+        "texto": "quiero dar de baja un automotor",
+        "k": 5
+      },
+      "response": [
+        {
+          "cod": 36,
+          "nombre": "Baja de automotor (por transferencia, siniestro, robo, hurto)",
+          "puntaje": 0.93,
+          "habilitado": true,
+          "requisitos": [
+            "Iniciar en la ventanilla digital",
+            "Documentacion del DNRPA o informe de dominio segun el caso",
+            "Comprobante de pago de la boleta emitida"
+          ],
+          "nivel_identificacion": "presencial_o_validacion_manual",
+          "costo": "1,5 U.V.F. mas cancelacion de la deuda si correspondiere",
+          "tiempo": "Una semana",
+          "validez": "Sin vencimiento",
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 86,
+          "nombre": "Presentacion denuncia de venta.",
+          "puntaje": 0.78,
+          "habilitado": true,
+          "requisitos": [
+            "Denuncia de Venta original o copia certificada",
+            "Titulo de propiedad del adquiriente",
+            "Informe de Dominio"
+          ],
+          "nivel_identificacion": "clave_simple",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - pasos y normativa.xlsx"
+        },
+        {
+          "cod": 127,
+          "nombre": "Certificado de libre deuda para bienes automotor",
+          "puntaje": 0.64,
+          "habilitado": true,
+          "requisitos": [
+            "Patente o dominio",
+            "Datos del titular",
+            "Situacion fiscal regular en todos los tributos municipales"
+          ],
+          "nivel_identificacion": "clave_simple",
+          "costo": "$1.589,37",
+          "tiempo": "Aproximadamente 3 dias",
+          "validez": "Hasta el proximo vencimiento del impuesto automotor",
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "request": {
+        "texto": "vendi mi auto y no quiero seguir figurando",
+        "k": 5
+      },
+      "response": [
+        {
+          "cod": 86,
+          "nombre": "Presentacion denuncia de venta.",
+          "puntaje": 0.89,
+          "habilitado": true,
+          "requisitos": [
+            "Denuncia de Venta original o copia certificada",
+            "Titulo de propiedad del adquiriente",
+            "Informe de Dominio"
+          ],
+          "nivel_identificacion": "clave_simple",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - pasos y normativa.xlsx"
+        },
+        {
+          "cod": 36,
+          "nombre": "Baja de automotor (por transferencia, siniestro, robo, hurto)",
+          "puntaje": 0.84,
+          "habilitado": true,
+          "requisitos": [
+            "Iniciar en la ventanilla digital",
+            "Documentacion del DNRPA o informe de dominio segun el caso",
+            "Comprobante de pago de la boleta emitida"
+          ],
+          "nivel_identificacion": "presencial_o_validacion_manual",
+          "costo": "1,5 U.V.F. mas cancelacion de la deuda si correspondiere",
+          "tiempo": "Una semana",
+          "validez": "Sin vencimiento",
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 127,
+          "nombre": "Certificado de libre deuda para bienes automotor",
+          "puntaje": 0.67,
+          "habilitado": true,
+          "requisitos": [
+            "Patente o dominio",
+            "Datos del titular",
+            "Situacion fiscal regular en todos los tributos municipales"
+          ],
+          "nivel_identificacion": "clave_simple",
+          "costo": "$1.589,37",
+          "tiempo": "Aproximadamente 3 dias",
+          "validez": "Hasta el proximo vencimiento del impuesto automotor",
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        }
+      ]
+    },
+    {
+      "id": "T06",
+      "request": {
+        "texto": "consultar deuda de patente",
+        "k": 5
+      },
+      "response": [
+        {
+          "cod": 68,
+          "nombre": "Autogestion de facturas municipales",
+          "puntaje": 0.86,
+          "habilitado": true,
+          "requisitos": [
+            "Datos basicos del bien o del contribuyente"
+          ],
+          "nivel_identificacion": "sin_clave",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 72,
+          "nombre": "Pago de Tributos",
+          "puntaje": 0.74,
+          "habilitado": true,
+          "requisitos": [
+            "Boleta o deuda identificada",
+            "Medio de pago habilitado"
+          ],
+          "nivel_identificacion": "sin_clave",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 134,
+          "nombre": "Consultas a la Direccion General de RENTAS",
+          "puntaje": 0.57,
+          "habilitado": true,
+          "requisitos": [],
+          "nivel_identificacion": "sin_clave",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        }
+      ]
+    },
+    {
+      "id": "T07",
+      "request": {
+        "texto": "imprimir boleta automotor",
+        "k": 5
+      },
+      "response": [
+        {
+          "cod": 68,
+          "nombre": "Autogestion de facturas municipales",
+          "puntaje": 0.91,
+          "habilitado": true,
+          "requisitos": [
+            "Datos basicos del bien o del contribuyente"
+          ],
+          "nivel_identificacion": "sin_clave",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 72,
+          "nombre": "Pago de Tributos",
+          "puntaje": 0.73,
+          "habilitado": true,
+          "requisitos": [
+            "Boleta o deuda identificada",
+            "Medio de pago habilitado"
+          ],
+          "nivel_identificacion": "sin_clave",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 134,
+          "nombre": "Consultas a la Direccion General de RENTAS",
+          "puntaje": 0.52,
+          "habilitado": true,
+          "requisitos": [],
+          "nivel_identificacion": "sin_clave",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        }
+      ]
+    },
+    {
+      "id": "T08",
+      "request": {
+        "texto": "alta de automotor",
+        "k": 5
+      },
+      "response": [
+        {
+          "cod": 84,
+          "nombre": "Alta automotor",
+          "puntaje": 0.9,
+          "habilitado": true,
+          "requisitos": [
+            "Documentacion registral del automotor",
+            "Datos del titular"
+          ],
+          "nivel_identificacion": "clave_simple",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 87,
+          "nombre": "Solicitud de valuacion fiscal automotor",
+          "puntaje": 0.67,
+          "habilitado": true,
+          "requisitos": [
+            "Datos del automotor",
+            "Documentacion respaldatoria para valuacion"
+          ],
+          "nivel_identificacion": "clave_simple",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 134,
+          "nombre": "Consultas a la Direccion General de RENTAS",
+          "puntaje": 0.46,
+          "habilitado": true,
+          "requisitos": [],
+          "nivel_identificacion": "sin_clave",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        }
+      ]
+    },
+    {
+      "id": "T09",
+      "request": {
+        "texto": "tramite no existente de ejemplo",
+        "k": 5
+      },
+      "response": [],
+      "notas": [
+        "Caso vacio para cubrir consultas sin candidatos de tramite."
+      ]
+    },
+    {
+      "id": "T10",
+      "request": {
+        "texto": "necesito hacer un tramite pero no tengo clave",
+        "k": 5
+      },
+      "response": [
+        {
+          "cod": 134,
+          "nombre": "Consultas a la Direccion General de RENTAS",
+          "puntaje": 0.87,
+          "habilitado": true,
+          "requisitos": [],
+          "nivel_identificacion": "sin_clave",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 68,
+          "nombre": "Autogestion de facturas municipales",
+          "puntaje": 0.74,
+          "habilitado": true,
+          "requisitos": [
+            "Datos basicos del bien o del contribuyente"
+          ],
+          "nivel_identificacion": "sin_clave",
+          "costo": null,
+          "tiempo": null,
+          "validez": null,
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        },
+        {
+          "cod": 36,
+          "nombre": "Baja de automotor (por transferencia, siniestro, robo, hurto)",
+          "puntaje": 0.58,
+          "habilitado": true,
+          "requisitos": [
+            "Iniciar en la ventanilla digital",
+            "Documentacion del DNRPA o informe de dominio segun el caso",
+            "Comprobante de pago de la boleta emitida"
+          ],
+          "nivel_identificacion": "presencial_o_validacion_manual",
+          "costo": "1,5 U.V.F. mas cancelacion de la deuda si correspondiere",
+          "tiempo": "Una semana",
+          "validez": "Sin vencimiento",
+          "fuente": "tramites-procesos/Tramites piloto - indice.docx"
+        }
+      ]
+    }
+  ],
+  "normativa_tramite": [
+    {
+      "id": "NT01",
+      "request": {
+        "cod_tramite": 36,
+        "filtros": {
+          "vigente_a": "2026-08-30"
+        }
+      },
+      "response": [
+        {
+          "texto": "La denuncia impositiva de venta ante la DGR es causal de baja si no registra deudas del gravamen a la fecha, si existe denuncia de venta ante el Registro Nacional, si se identifica fehacientemente al adquirente y si se acompana la documentacion que determine la Autoridad de Aplicacion.",
+          "cita": "Ord. 3500, Anexo Impuesto Automotor, art. 12 inc. c",
+          "cadena_jerarquica": [
+            "Ordenanza 3500",
+            "Anexo Impuesto Automotor",
+            "Articulo 12",
+            "Inciso c"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": null,
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.94,
+          "fuente": {
+            "norma_id": "ORD-3500",
+            "titulo": "Ordenanza Fiscal (Anexos I a XV)",
+            "archivo": "ORD-3500 - Ordenanza Fiscal (vigente).pdf"
+          }
+        },
+        {
+          "texto": "La baja de automotor se encadena con la verificacion de libre deuda porque el articulo 12 inciso c exige no registrar deudas del gravamen a la fecha de la denuncia.",
+          "cita": "Ord. 3500, Anexo Impuesto Automotor, art. 12 inc. c",
+          "cadena_jerarquica": [
+            "Ordenanza 3500",
+            "Anexo Impuesto Automotor",
+            "Articulo 12",
+            "Inciso c"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": null,
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.86,
+          "fuente": {
+            "norma_id": "ORD-3500",
+            "titulo": "Ordenanza Fiscal (Anexos I a XV)",
+            "archivo": "ORD-3500 - Ordenanza Fiscal (vigente).pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NT02",
+      "request": {
+        "cod_tramite": 86,
+        "filtros": {
+          "vigente_a": "2026-08-30"
+        }
+      },
+      "response": [
+        {
+          "texto": "La denuncia impositiva de venta ante la DGR limita la responsabilidad del transmitente cuando cumple los requisitos del articulo 12 inciso c.",
+          "cita": "Ord. 3500, Anexo Impuesto Automotor, art. 12 inc. c",
+          "cadena_jerarquica": [
+            "Ordenanza 3500",
+            "Anexo Impuesto Automotor",
+            "Articulo 12",
+            "Inciso c"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": null,
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.9,
+          "fuente": {
+            "norma_id": "ORD-3500",
+            "titulo": "Ordenanza Fiscal (Anexos I a XV)",
+            "archivo": "ORD-3500 - Ordenanza Fiscal (vigente).pdf"
+          }
+        },
+        {
+          "texto": "La falsedad en la declaracion jurada del articulo 12 inciso c inhibe la limitacion de responsabilidad. Si un error imputable al denunciante impide notificar al nuevo responsable, los efectos de la denuncia se suspenden hasta que sea salvado.",
+          "cita": "Ord. 3500, Anexo Impuesto Automotor, art. 13",
+          "cadena_jerarquica": [
+            "Ordenanza 3500",
+            "Anexo Impuesto Automotor",
+            "Articulo 13"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": null,
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.85,
+          "fuente": {
+            "norma_id": "ORD-3500",
+            "titulo": "Ordenanza Fiscal (Anexos I a XV)",
+            "archivo": "ORD-3500 - Ordenanza Fiscal (vigente).pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NT03",
+      "request": {
+        "cod_tramite": 127,
+        "filtros": {
+          "vigente_a": "2026-08-30"
+        }
+      },
+      "response": [
+        {
+          "texto": "Ninguna oficina publica municipal ni organismo autarquico puede dar curso a tramites sobre transferencia de bienes, negocios, activos y pasivos sin acreditar la inexistencia de deudas fiscales mediante certificacion de la Autoridad de Aplicacion.",
+          "cita": "Ord. 3500, Parte General, art. 37",
+          "cadena_jerarquica": [
+            "Ordenanza 3500",
+            "Parte General",
+            "Articulo 37"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": null,
+            "hasta": null,
+            "derogada_por": null
+          },
+          "puntaje": 0.91,
+          "fuente": {
+            "norma_id": "ORD-3500",
+            "titulo": "Ordenanza Fiscal (Anexos I a XV)",
+            "archivo": "ORD-3500 - Ordenanza Fiscal (vigente).pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NT04",
+      "request": {
+        "cod_tramite": 127,
+        "filtros": {
+          "vigente_a": "2010-06-01"
+        }
+      },
+      "response": [
+        {
+          "texto": "Para una consulta fechada en 2010, la referencia tarifaria del corpus base es la Ordenanza Tarifaria 2009, todavia no abrogada a esa fecha.",
+          "cita": "Ord. 3501, art. 1 y Anexo Tarifario",
+          "cadena_jerarquica": [
+            "Ordenanza 3501",
+            "Articulo 1",
+            "Anexo Tarifario"
+          ],
+          "vigencia": {
+            "estado": "vigente",
+            "desde": "2009-03-31",
+            "hasta": "2016-06-02",
+            "derogada_por": "Ord. 5069, art. 2"
+          },
+          "puntaje": 0.88,
+          "fuente": {
+            "norma_id": "ORD-3501",
+            "titulo": "Ordenanza Tarifaria 2009",
+            "archivo": "ORD-3501 - Ordenanza Tarifaria 2009 (ABROGADA por 5069).pdf"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NT05",
+      "request": {
+        "cod_tramite": 9999,
+        "filtros": {
+          "vigente_a": "2026-08-30"
+        }
+      },
+      "response": [],
+      "notas": [
+        "Caso vacio para codigos de tramite sin normativa asociada en el corpus mock."
+      ]
+    }
+  ]
+}

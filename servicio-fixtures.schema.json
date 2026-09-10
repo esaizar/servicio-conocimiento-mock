@@ -1,0 +1,422 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://untdf.local/contrato-respuestas-mock/servicio-fixtures.schema.json",
+  "title": "Fixtures del servicio de conocimiento juridico",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "consultar_normativa",
+    "candidatos_de_tramite",
+    "normativa_tramite"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "fecha",
+        "fuentes",
+        "convenciones"
+      ],
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "fecha": {
+          "type": "string",
+          "format": "date"
+        },
+        "fuentes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "convenciones": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "puntaje",
+            "vigencia_estado",
+            "nivel_identificacion"
+          ],
+          "properties": {
+            "puntaje": {
+              "type": "string"
+            },
+            "vigencia_estado": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "vigente",
+                  "no_vigente",
+                  "prorrogada"
+                ]
+              }
+            },
+            "nivel_identificacion": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "sin_clave",
+                  "clave_simple",
+                  "presencial_o_validacion_manual"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "consultar_normativa": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/casoNormativa"
+      }
+    },
+    "candidatos_de_tramite": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/casoTramite"
+      }
+    },
+    "normativa_tramite": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/casoNormativaTramite"
+      }
+    }
+  },
+  "$defs": {
+    "requestNormativa": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "texto"
+      ],
+      "properties": {
+        "texto": {
+          "type": "string"
+        },
+        "filtros": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "vigente_a": {
+              "type": "string",
+              "format": "date"
+            },
+            "tributo": {
+              "type": "string"
+            }
+          }
+        },
+        "k": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "requestTramite": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "texto"
+      ],
+      "properties": {
+        "texto": {
+          "type": "string"
+        },
+        "k": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "requestNormativaTramite": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cod_tramite"
+      ],
+      "properties": {
+        "cod_tramite": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "filtros": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "vigente_a": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        }
+      }
+    },
+    "vigencia": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "estado",
+        "desde",
+        "hasta",
+        "derogada_por"
+      ],
+      "properties": {
+        "estado": {
+          "type": "string",
+          "enum": [
+            "vigente",
+            "no_vigente",
+            "prorrogada"
+          ]
+        },
+        "desde": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "hasta": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "derogada_por": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "fuenteNormativa": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "norma_id",
+        "titulo",
+        "archivo"
+      ],
+      "properties": {
+        "norma_id": {
+          "type": "string"
+        },
+        "titulo": {
+          "type": "string"
+        },
+        "archivo": {
+          "type": "string"
+        }
+      }
+    },
+    "resultadoNormativa": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "texto",
+        "cita",
+        "cadena_jerarquica",
+        "vigencia",
+        "puntaje",
+        "fuente"
+      ],
+      "properties": {
+        "texto": {
+          "type": "string"
+        },
+        "cita": {
+          "type": "string"
+        },
+        "cadena_jerarquica": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "vigencia": {
+          "$ref": "#/$defs/vigencia"
+        },
+        "puntaje": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "fuente": {
+          "$ref": "#/$defs/fuenteNormativa"
+        }
+      }
+    },
+    "resultadoTramite": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cod",
+        "nombre",
+        "puntaje",
+        "habilitado",
+        "requisitos",
+        "nivel_identificacion"
+      ],
+      "properties": {
+        "cod": {
+          "type": "integer"
+        },
+        "nombre": {
+          "type": "string"
+        },
+        "puntaje": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "habilitado": {
+          "type": "boolean"
+        },
+        "requisitos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "nivel_identificacion": {
+          "type": "string",
+          "enum": [
+            "sin_clave",
+            "clave_simple",
+            "presencial_o_validacion_manual"
+          ]
+        },
+        "costo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tiempo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "validez": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fuente": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "casoNormativa": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "request",
+        "response"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^N[0-9]{2}$"
+        },
+        "request": {
+          "$ref": "#/$defs/requestNormativa"
+        },
+        "response": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resultadoNormativa"
+          }
+        },
+        "notas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "casoTramite": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "request",
+        "response"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^T[0-9]{2}$"
+        },
+        "request": {
+          "$ref": "#/$defs/requestTramite"
+        },
+        "response": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resultadoTramite"
+          }
+        },
+        "notas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "casoNormativaTramite": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "request",
+        "response"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^NT[0-9]{2}$"
+        },
+        "request": {
+          "$ref": "#/$defs/requestNormativaTramite"
+        },
+        "response": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/resultadoNormativa"
+          }
+        },
+        "notas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
